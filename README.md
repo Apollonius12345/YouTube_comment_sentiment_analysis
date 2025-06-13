@@ -78,4 +78,4 @@ This dataset is named Non_Spam_Comments.csv.
 
 # Sentimental Analysis
 Sentiment analysis was performed on this dataset. Word Cloud was formed and displayed.
-![Flowchart for Spam Detection](images/wordcloud with stopwords.png)
+![Flowchart for Spam Detection](images/wordcloud_with_stopwords.png)
