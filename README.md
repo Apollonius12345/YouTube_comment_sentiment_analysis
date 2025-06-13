@@ -21,3 +21,8 @@ Extract all the comments of a YouTube video and predict the Spam Comments using 
 - Word Cloud
 - NLP (Natural Language Processing)
 - Google API Client
+
+# Dataset Used
+- https://www.youtube.com/watch?v=kX3nB4PpJko for “comments_dataset.csv” extracted using API.
+
+- https://www.kaggle.com/datasets/lakshmi25npathi/images for “Youtube01-Psy.csv”.
