@@ -1,6 +1,6 @@
 # YouTube_comment_sentiment_analysis
 
-Motivation
+# Motivation
 YouTube is the second most popular search engine; it houses many genres like entertainment, education, and lifestyle content. The comment section under any video is where we can understand what the general public feels about the video; it also helps the creator improve the content in line with the audience's requirements. The major problem faced by YouTube today is the increasing number of spam comments, which makes it very difficult for the creator to analyze the comments; also, these spam comments are the primary source of YouTube scams. Thus there is an urgent need to detect and eliminate these spam comments.
 
 It is imperative for a creator to analyze the comments on the videos they create regularly; this becomes very difficult, particularly when the creator has a huge audience, thus tons of comments. Comment analysis can also be helpful to the users as they can get a gist of what the video is about without actually wasting their time in watching the whole video; this becomes important as most of the creators use click-bait captions and thumbnails to force users to consume their content. Recently YouTube has scrapped the dislike counter under the videos, sentimental analysis of the comments sections can be used as an alternative.
