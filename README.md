@@ -94,3 +94,10 @@ Precision, recall, and f-1 scores of the SVM model were found to be556, 0.513, a
 The confusion matrix obtained for the SVM classifier model looks like this
 
 ![Flowchart for Spam Detection](images/confusion_matrix.jpg)
+
+- A larger dataset will result in better performance or accuracy which means the model is suffering from high bias.
+- We are trying to fit non-linear data into a linear model which is resulting into a lesser accuracy.
+- The dataset which we have used has very high number of spam comments. This can be reduced if we use a dataset having almost equal amount of spam and non-spam comments.
+- In the final results, negative-rated, positive-rated, neutral-rated comments classified on the basis of VADER score are equal to 528, 1899, and 7133 respectively.
+
+![Flowchart for Spam Detection](images/bar_plot.jpg)
