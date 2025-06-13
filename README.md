@@ -103,5 +103,5 @@ The confusion matrix obtained for the SVM classifier model looks like this
 ![Flowchart for Spam Detection](images/bar_plot.jpg)
 
 # References
-  https://developers.google.com/youtube/v3/docs/commentThreads/list?hl=en_GB#usage
+- https://developers.google.com/youtube/v3/docs/commentThreads/list?hl=en_GB#usage
 - https://www.kaggle.com/datasets/lakshmi25npathi/images
