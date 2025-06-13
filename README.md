@@ -87,3 +87,10 @@ Text cleaning was performed like removing stop words, lemmatization, removing al
 
 Now for rating the comments as negative, positive, and neutral “VADER” scores are used.
 Finally, total counts of negative, positive, and neutral comments were calculated to gain insight if the viewers liked the content of the user or not. If negative counts are greater than positive counts, then simply the content of the user is highly disliked by the audience.
+
+# Conclusions and Observations
+SVM has better accuracy than logistic regression.
+Precision, recall, and f-1 scores of the SVM model were found to be556, 0.513, and 0.533 respectively. If the user wants to analyze as many as possible non-spam comments and does not want to miss any important non-spam comments then he has to need a model with a very high precision which can be obtained by increasing the threshold value of the classifier.
+The confusion matrix obtained for the SVM classifier model looks like this
+
+![Flowchart for Spam Detection](images/confusion_matrix.jpg)
