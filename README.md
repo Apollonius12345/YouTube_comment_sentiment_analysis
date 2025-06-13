@@ -101,3 +101,7 @@ The confusion matrix obtained for the SVM classifier model looks like this
 - In the final results, negative-rated, positive-rated, neutral-rated comments classified on the basis of VADER score are equal to 528, 1899, and 7133 respectively.
 
 ![Flowchart for Spam Detection](images/bar_plot.jpg)
+
+# References
+  https://developers.google.com/youtube/v3/docs/commentThreads/list?hl=en_GB#usage
+- https://www.kaggle.com/datasets/lakshmi25npathi/images
