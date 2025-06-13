@@ -84,5 +84,6 @@ Sentiment analysis was performed on this dataset. Word Cloud was formed and disp
 Text cleaning was performed like removing stop words, lemmatization, removing all the words having length less than 2, etc.,a list of updated stop words can also be custom added. Then again word cloud was formed and displayed for this cleaned data.
 
 ![Flowchart for Spam Detection](images/clear_wordcloud.jpg)
+
 Now for rating the comments as negative, positive, and neutral “VADER” scores are used.
 Finally, total counts of negative, positive, and neutral comments were calculated to gain insight if the viewers liked the content of the user or not. If negative counts are greater than positive counts, then simply the content of the user is highly disliked by the audience.
