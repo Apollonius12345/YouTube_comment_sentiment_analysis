@@ -8,3 +8,16 @@ However, there's a growing challenge: the rising tide of spam comments. These no
 Moreover, with large channels generating thousands of comments per video, manually analyzing them becomes nearly impossible. This is where automated comment analysis becomes essential — both for creators and viewers. While creators can use it to adapt their content and improve engagement, viewers benefit too: by skimming through top comments, they can quickly gauge the value and relevance of a video, especially in an age of clickbait titles and misleading thumbnails.
 
 Additionally, since YouTube removed the public dislike counter, analyzing comment sentiment can serve as an alternative metric for audience reception — offering a clearer picture of whether a video is well-received or not.
+
+# Problem Statement
+Extract all the comments of a YouTube video and predict the Spam Comments using the Classification model trained on the spam comments dataset. Then perform a sentimental analysis and generate a Word Cloud to get the hot topics people are talking about after eliminating the spam comments and finding out the number of negative and positive comments to decide whether the content is liked by viewers or not.
+
+# Algorithms & Tools used
+- NLTK (Natural Language Toolkit)
+- Sklearn, NumPy, Matplotlib, Pandas
+- SVM (Support Vector Machine)
+- Logistic Regression
+- Text Analytics
+- Word Cloud
+- NLP (Natural Language Processing)
+- Google API Client
