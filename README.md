@@ -26,3 +26,55 @@ Extract all the comments of a YouTube video and predict the Spam Comments using 
 - https://www.youtube.com/watch?v=kX3nB4PpJko for “comments_dataset.csv” extracted using API.
 
 - https://www.kaggle.com/datasets/lakshmi25npathi/images for “Youtube01-Psy.csv”.
+
+# Methodology
+## Comment Extraction
+The script comment_extractor.py is designed to automatically fetch all comments and replies from a YouTube video. To do this, you just need to provide the videoId of the video. The videoId is the part that comes after v= in a YouTube URL. For example, in https://www.youtube.com/watch?v=dQw4w9WgXcQ, the videoId is dQw4w9WgXcQ.
+### How it works
+The script uses the YouTube Data API v3, accessed via the Google API Client.
+To use the API, you’ll need an API key. You can generate one by visiting: YouTube API – Get Started
+### Script Logic
+- he main() function in the script starts by calling the comment_threads(videoId) function.
+- This function sends a request to the YouTube API, which returns up to 20 comments per request.
+- These comments are processed using process_comments() to separate top-level comments from replies, and stored in a list called comments_list.
+- Since the API can only return 20 comments at a time, a while loop is used to keep fetching until all comments and replies are retrieved.
+- Once all data is collected, the make_csv() function saves everything into a file called comments_dataset.csv.
+### How to run
+In your terminal or command line, just run: python comment_extractor.py
+
+# Spam Classification
+To detect spam in YouTube comments, we trained a machine learning model using the ‘Youtube01-Psy’ dataset.
+This dataset includes the following columns:
+- COMMENT_ID
+- AUTHOR
+- CONTENT (the actual comment)
+- CLASS — this tells us whether the comment is spam or not.
+If CLASS = 1, the comment is spam. If CLASS = 0, it's not spam.
+## Models Used:
+We experimented with two models:
+- Logistic Regression
+- Support Vector Machine (SVM) with a Linear Kernel
+The dataset was split into 80% training data and 20% test data.Here’s how the models performed:
+- Logistic Regression: 78.57% accuracy
+- SVM: 87.14% accuracy
+Since SVM performed much better, we chose it for our final spam classification model.
+## Applying the Model on New Data
+We then used our trained SVM model on a new dataset named comments_dataset, which contains YouTube comments collected using our extraction script.
+This dataset includes various fields such as:
+- videoId, textDisplay, textOriginal, parentId
+- authorDisplayName, authorProfileImageUrl, authorChannelUrl
+- authorChannelId, canRate, viewerRating, likeCount
+- publishedAt, updatedAt, commentId
+Before classification, we removed unnecessary columns that were not relevant to spam detection.
+
+## Classification Process
+We ran our trained SVM model on the dataset.
+A new column named spam was added to the dataset.
+- spam = 1 → comment is spam
+- spam = 0 → comment is not spam
+This updated dataset was saved as comments_datasetwithspam.csv.
+Finally, we filtered out all the spam comments and created a clean dataset containing only non-spam comments.
+This dataset is named Non_Spam_Comments.csv.
+
+# Sentimental Analysis
+Sentiment analysis was performed on this dataset. Word Cloud was formed and displayed.
